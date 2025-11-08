@@ -311,15 +311,16 @@ export default function HeroSection() {
 
       <section id="industry-expertise" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-16">
-        <div className="max-w-2xl mx-auto space-y-3 text-center">
-          <h1 className="text-3xl/tight sm:text-4xl/tight font-bold text-blue-950">
-            Industry Expertise Across Key Sectors
-          </h1>
-          <p className="text-blue-800">
-            PaceEdge delivers tailored technology solutions across diverse
-            industries, empowering organizations with innovation and efficiency.
-          </p>
-        </div>
+          <div className="max-w-2xl mx-auto space-y-3 text-center">
+            <h1 className="text-3xl/tight sm:text-4xl/tight font-bold text-blue-950">
+              Industry Expertise Across Key Sectors
+            </h1>
+            <p className="text-blue-800">
+              PaceEdge delivers tailored technology solutions across diverse
+              industries, empowering organizations with innovation and
+              efficiency.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
             {[
               {
@@ -586,41 +587,131 @@ export default function HeroSection() {
       </section>
 
       <footer id="contact" className="py-16 bg-blue-950 text-blue-100">
-        <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 space-y-10">
-          <div className="text-center space-y-6">
-            <h2 className="text-3xl font-bold">
-              Ready to Transform Your IT Infrastructure?
-            </h2>
-            <p>
-              Schedule your complimentary technology assessment and discover how
-              PaceEdge can accelerate your digital transformation journey.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-center sm:text-left">
-            <div className="space-y-2">
-              <h3 className="text-lg font-semibold">Contact Us</h3>
-              <p>
-                Email: <a href="mailto:admin@paceedge.in">admin@paceedge.in</a>
+        <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
+          <div className="space-y-12">
+            {/* Header Section */}
+            <div className="text-center space-y-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-blue-100">
+                Gage Your Digital Future
+              </h2>
+              <p className="text-blue-200 max-w-2xl mx-auto">
+                Schedule your complimentary technology assessment and discover
+                how PaceEdge can accelerate your digital transformation journey.
               </p>
-              <p>
-                Mobile: <a href="tel:+919766303918">+91 9766303918</a>,{" "}
-                <a href="tel:+919766303930">+91 9766303930</a>
-              </p>
-              <p>
-                Tel: <a href="tel:+912025898828">020 25898828</a>
-              </p>
-              <p>
-                Address: Off no 3, Bhakti Plaza, B Wing, Near Bremen Chowk,
-                Aundh, Pune 411007
-              </p>
+            
             </div>
-            <div>
-              <Link
-                href="https://www.paceedge.in"
-                className="inline-block px-6 py-3 bg-blue-600 text-white rounded-3xl hover:bg-blue-500"
-              >
-                Visit Our Website
-              </Link>
+
+            {/* Main Footer Content */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+              {/* Contact Information */}
+              <div className="space-y-4 text-center md:text-left">
+                <h3 className="text-lg font-semibold text-blue-100">
+                  Contact Us
+                </h3>
+                <ul className="space-y-2 text-blue-200">
+                  <li>
+                    Email:{" "}
+                    <a
+                      href="mailto:admin@paceedge.in"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      admin@paceedge.in
+                    </a>
+                  </li>
+                  <li>
+                    Mobile:{" "}
+                    <a
+                      href="tel:+919766303918"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      +91 9766303918
+                    </a>
+                    ,{" "}
+                    <a
+                      href="tel:+919766303930"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      +91 9766303930
+                    </a>
+                  </li>
+                  <li>
+                    Tel:{" "}
+                    <a
+                      href="tel:+912025898828"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      020 25898828
+                    </a>
+                  </li>
+                  <li>
+                    Address: Off no 3, Bhakti Plaza, B Wing, Near Bremen Chowk,
+                    Aundh, Pune 411007
+                  </li>
+                </ul>
+              </div>
+
+              {/* Quick Links */}
+              <div className="space-y-4 text-center md:text-left">
+                <h3 className="text-lg font-semibold text-blue-100">
+                  Quick Links
+                </h3>
+                <ul className="space-y-2 text-blue-200">
+                  <li>
+                    <Link
+                      href="/"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/solutions"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      Solutions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/why-us"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      Why Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://www.paceedge.in"
+                      className="hover:text-blue-300 transition ease-linear"
+                    >
+                      Visit Our Website
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Branding/Logo */}
+              <div className="flex justify-center md:justify-start items-center">
+                <Image
+                  src="/image.png" // Replace with actual logo path
+                  alt="PaceEdge Technologies Logo"
+                  width={150}
+                  height={50}
+                  className="w-auto"
+                />
+              </div>
+            </div>
+
+            {/* Social Media and Copyright */}
+            <div className="pt-8 border-t border-blue-800 flex flex-col sm:flex-row justify-between items-center gap-6">
+              <div className="flex justify-center gap-4">
+                
+              </div>
+              <div className="text-center text-blue-200">
+                &copy; {new Date().getFullYear()} PaceEdge Technologies. All
+                rights reserved.
+              </div>
             </div>
           </div>
         </div>
