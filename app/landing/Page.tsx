@@ -412,7 +412,7 @@ export default function HeroSection() {
           </div>
           <div className="flex md:flex-1 flex-col">
             <Image
-              src="/picture10.png"
+              src="/Picture10.png"
               alt="Real Estate Solutions"
               width={800}
               height={600}
@@ -420,7 +420,7 @@ export default function HeroSection() {
             />
             <div className="flex items-center justify-center">
               <Image
-                src="/picture11.png"
+                src="/Picture11.png"
                 alt="Real Estate Solutions"
                 width={400}
                 height={400}
